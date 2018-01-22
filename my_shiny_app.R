@@ -31,11 +31,11 @@ server <- function(input, output) {
 
     g <- ggplot(all_ages, (aes(all_ages$Major_category, 
                                eval(parse(text = paste("all_ages$", user_input, sep = "")))
-                               )))
+                               ))) + ylim(0, 150000)
     g <- g + geom_boxplot(aes(color = all_ages$Major_category))
     g <- g + theme_bw() +theme(axis.ticks.x = element_blank(), axis.text.x = element_blank())
-    g <- g + labs(x = "Major Category", y = "Salary") 
     g <- g + scale_color_discrete("Major Category")
+    g <- g + labs(x = "Major Category", y = "Salary") 
     g
   })
 }
