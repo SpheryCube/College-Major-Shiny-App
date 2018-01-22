@@ -1,0 +1,12 @@
+name: my_app1
+title: my_app1
+username:
+account: daniel-alfonsetti
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 259077
+bundleId: 1186214
+url: https://daniel-alfonsetti.shinyapps.io/my_app1/
+when: 1516587475.97202
+asMultiple: FALSE
+asStatic: FALSE
